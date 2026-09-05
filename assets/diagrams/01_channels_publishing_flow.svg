@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="flowBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <linearGradient id="boxGradActive" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" />
+      <stop offset="100%" stop-color="#022C22" />
+    </linearGradient>
+
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#25D366" />
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#10B981" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="320" rx="14" fill="url(#flowBg)" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Title bar -->
+  <text x="40" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#F8FAFC">
+    WHATSAPP CHANNEL BROADCAST PUBLISHING PIPELINE
+  </text>
+  <text x="40" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94A3B8">
+    End-to-end automated publishing flow from CMS to WhatsApp Channel subscribers
+  </text>
+
+  <!-- Step 1: Content Source -->
+  <g transform="translate(40, 100)" filter="url(#shadow)">
+    <rect width="180" height="170" rx="10" fill="url(#boxGrad1)" stroke="#38BDF8" stroke-width="1.5" />
+    <circle cx="30" cy="30" r="14" fill="#0284C7" fill-opacity="0.2" />
+    <text x="30" y="35" font-family="sans-serif" font-size="14" fill="#38BDF8" text-anchor="middle">1</text>
+    <text x="54" y="34" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">News Source</text>
+    
+    <line x1="16" y1="56" x2="164" y2="56" stroke="#334155" stroke-width="1" />
+    <text x="20" y="80" font-family="monospace" font-size="11" fill="#E2E8F0">• WordPress Post</text>
+    <text x="20" y="102" font-family="monospace" font-size="11" fill="#E2E8F0">• Strapi / Ghost</text>
+    <text x="20" y="124" font-family="monospace" font-size="11" fill="#E2E8F0">• n8n / Make / Cron</text>
+    <text x="20" y="146" font-family="monospace" font-size="11" fill="#E2E8F0">• Custom Node App</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="220" y1="185" x2="265" y2="185" stroke="url(#lineGrad)" stroke-width="2.5" marker-end="url(#arrow)" />
+
+  <!-- Step 2: SDK Engine -->
+  <g transform="translate(275, 90)" filter="url(#shadow)">
+    <rect width="200" height="190" rx="10" fill="url(#boxGradActive)" stroke="#10B981" stroke-width="2" />
+    <circle cx="30" cy="30" r="14" fill="#10B981" fill-opacity="0.3" />
+    <text x="30" y="35" font-family="sans-serif" font-size="14" fill="#34D399" text-anchor="middle">2</text>
+    <text x="54" y="34" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">whapi-node-sdk</text>
+    
+    <line x1="16" y1="56" x2="184" y2="56" stroke="#047857" stroke-width="1" />
+    <text x="20" y="80" font-family="monospace" font-size="11" fill="#A7F3D0">✔ UTM Tracking</text>
+    <text x="20" y="102" font-family="monospace" font-size="11" fill="#A7F3D0">✔ Unicode Truncation</text>
+    <text x="20" y="124" font-family="monospace" font-size="11" fill="#A7F3D0">✔ Image/Text Fallback</text>
+    <text x="20" y="146" font-family="monospace" font-size="11" fill="#A7F3D0">✔ @newsletter ID Check</text>
+    <text x="20" y="168" font-family="monospace" font-size="11" fill="#A7F3D0">✔ Secret Redaction</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="475" y1="185" x2="520" y2="185" stroke="url(#lineGrad)" stroke-width="2.5" marker-end="url(#arrow)" />
+
+  <!-- Step 3: Whapi Gateway -->
+  <g transform="translate(530, 100)" filter="url(#shadow)">
+    <rect width="180" height="170" rx="10" fill="url(#boxGrad1)" stroke="#818CF8" stroke-width="1.5" />
+    <circle cx="30" cy="30" r="14" fill="#6366F1" fill-opacity="0.2" />
+    <text x="30" y="35" font-family="sans-serif" font-size="14" fill="#A5B4FC" text-anchor="middle">3</text>
+    <text x="54" y="34" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">Whapi Gateway</text>
+    
+    <line x1="16" y1="56" x2="164" y2="56" stroke="#334155" stroke-width="1" />
+    <text x="20" y="80" font-family="monospace" font-size="11" fill="#E2E8F0">• OpenAPI 1.8.7</text>
+    <text x="20" y="102" font-family="monospace" font-size="11" fill="#E2E8F0">• POST /messages/*</text>
+    <text x="20" y="124" font-family="monospace" font-size="11" fill="#E2E8F0">• WhatsApp Session</text>
+    <text x="20" y="146" font-family="monospace" font-size="11" fill="#E2E8F0">• Media Delivery</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <line x1="710" y1="185" x2="755" y2="185" stroke="url(#lineGrad)" stroke-width="2.5" marker-end="url(#arrow)" />
+
+  <!-- Step 4: WhatsApp Channel -->
+  <g transform="translate(765, 100)" filter="url(#shadow)">
+    <rect width="160" height="170" rx="10" fill="url(#boxGrad1)" stroke="#25D366" stroke-width="1.5" />
+    <circle cx="30" cy="30" r="14" fill="#25D366" fill-opacity="0.2" />
+    <text x="30" y="35" font-family="sans-serif" font-size="14" fill="#25D366" text-anchor="middle">4</text>
+    <text x="54" y="34" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">Channel Feed</text>
+    
+    <line x1="16" y1="56" x2="144" y2="56" stroke="#334155" stroke-width="1" />
+    <text x="20" y="80" font-family="monospace" font-size="11" fill="#86EFAC">📢 @newsletter</text>
+    <text x="20" y="102" font-family="monospace" font-size="11" fill="#E2E8F0">• Unlimited Users</text>
+    <text x="20" y="124" font-family="monospace" font-size="11" fill="#E2E8F0">• 100% Privacy</text>
+    <text x="20" y="146" font-family="monospace" font-size="11" fill="#E2E8F0">• Instant Broadcast</text>
+  </g>
+</svg>
+

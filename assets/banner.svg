@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#25D366" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#25D366" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" />
+
+  <!-- Ambient Glow Background Circles -->
+  <circle cx="200" cy="100" r="180" fill="url(#glowGrad)" filter="url(#glow)" />
+  <circle cx="1050" cy="320" r="160" fill="url(#glowGrad)" filter="url(#glow)" />
+
+  <!-- Grid lines overlay for tech aesthetic -->
+  <g stroke="#334155" stroke-opacity="0.15" stroke-width="1">
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="140" x2="1200" y2="140" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="280" x2="1200" y2="280" />
+    <line x1="0" y1="350" x2="1200" y2="350" />
+    <line x1="150" y1="0" x2="150" y2="420" />
+    <line x1="300" y1="0" x2="300" y2="420" />
+    <line x1="450" y1="0" x2="450" y2="420" />
+    <line x1="600" y1="0" x2="600" y2="420" />
+    <line x1="750" y1="0" x2="750" y2="420" />
+    <line x1="900" y1="0" x2="900" y2="420" />
+    <line x1="1050" y1="0" x2="1050" y2="420" />
+  </g>
+
+  <!-- Left Side: Branding & Typography -->
+  <g transform="translate(80, 75)">
+    <!-- Top Pill Badge -->
+    <rect x="0" y="0" width="260" height="32" rx="16" fill="#1E293B" stroke="#25D366" stroke-width="1.5" stroke-opacity="0.6" />
+    <circle cx="18" cy="16" r="6" fill="#25D366" />
+    <text x="32" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#E2E8F0" letter-spacing="0.5">WHATSAPP CHANNELS SDK</text>
+
+    <!-- Main Title -->
+    <text x="0" y="85" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+      whapi-node-sdk
+    </text>
+
+    <!-- Gradient Accent Subtitle -->
+    <text x="0" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="600" fill="url(#accentGrad)">
+      Professional WhatsApp Channels &amp; Broadcast Publishing Engine
+    </text>
+
+    <!-- Description text -->
+    <text x="0" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="400" fill="#94A3B8">
+      Zero-dependency, production-ready Node.js library for Whapi.Cloud REST API.
+    </text>
+    <text x="0" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="400" fill="#94A3B8">
+      Automated news cross-posting, interactive quizzes, polls, and idempotent retries.
+    </text>
+
+    <!-- Feature tags / badges row -->
+    <g transform="translate(0, 225)">
+      <!-- Tag 1: Node 20+ -->
+      <rect x="0" y="0" width="105" height="28" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="52" y="18" font-family="monospace" font-size="12" font-weight="600" fill="#38BDF8" text-anchor="middle">Node.js 20+</text>
+
+      <!-- Tag 2: Native Fetch -->
+      <rect x="115" y="0" width="115" height="28" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="172" y="18" font-family="monospace" font-size="12" font-weight="600" fill="#34D399" text-anchor="middle">Native Fetch</text>
+
+      <!-- Tag 3: Zero Deps -->
+      <rect x="240" y="0" width="105" height="28" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="292" y="18" font-family="monospace" font-size="12" font-weight="600" fill="#FBBF24" text-anchor="middle">0 Runtime Dep</text>
+
+      <!-- Tag 4: OpenAPI 1.8.7 -->
+      <rect x="355" y="0" width="125" height="28" rx="6" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="417" y="18" font-family="monospace" font-size="12" font-weight="600" fill="#A78BFA" text-anchor="middle">OpenAPI 1.8.7</text>
+    </g>
+  </g>
+
+  <!-- Right Side: Interactive Code Preview Card -->
+  <g transform="translate(680, 50)" filter="url(#cardShadow)">
+    <!-- Card Frame -->
+    <rect width="440" height="320" rx="14" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+
+    <!-- Window Controls (dots) -->
+    <circle cx="25" cy="22" r="5" fill="#EF4444" />
+    <circle cx="42" cy="22" r="5" fill="#F59E0B" />
+    <circle cx="59" cy="22" r="5" fill="#10B981" />
+    <text x="220" y="26" font-family="monospace" font-size="11" fill="#64748B" text-anchor="middle">whapi.news.publishArticle()</text>
+    <line x1="0" y1="42" x2="440" y2="42" stroke="#334155" stroke-width="1" />
+
+    <!-- Code Snippet -->
+    <g transform="translate(24, 68)" font-family="'SF Mono', 'Fira Code', Consolas, monospace" font-size="12.5" line-height="1.5">
+      <!-- Line 1 -->
+      <text y="0"><tspan fill="#C084FC">import</tspan> <tspan fill="#E2E8F0">{ Whapi }</tspan> <tspan fill="#C084FC">from</tspan> <tspan fill="#34D399">'@your-scope/whapi-sdk'</tspan>;</text>
+
+      <!-- Line 2 -->
+      <text y="24"><tspan fill="#C084FC">const</tspan> <tspan fill="#E2E8F0">whapi =</tspan> <tspan fill="#C084FC">new</tspan> <tspan fill="#38BDF8">Whapi</tspan><tspan fill="#E2E8F0">({ token });</tspan></text>
+
+      <!-- Line 3 (blank) -->
+      <text y="48"><tspan fill="#64748B">// Publish article to WhatsApp Channel</tspan></text>
+
+      <!-- Line 4 -->
+      <text y="70"><tspan fill="#C084FC">await</tspan> <tspan fill="#E2E8F0">whapi.news.</tspan><tspan fill="#38BDF8">publishArticle</tspan><tspan fill="#E2E8F0">({</tspan></text>
+
+      <!-- Line 5 -->
+      <text y="92"><tspan fill="#E2E8F0">  channelId: </tspan><tspan fill="#F59E0B">'120363...@newsletter'</tspan><tspan fill="#E2E8F0">,</tspan></text>
+
+      <!-- Line 6 -->
+      <text y="114"><tspan fill="#E2E8F0">  title: </tspan><tspan fill="#34D399">'Apple M4 Pro Announced'</tspan><tspan fill="#E2E8F0">,</tspan></text>
+
+      <!-- Line 7 -->
+      <text y="136"><tspan fill="#E2E8F0">  image: </tspan><tspan fill="#34D399">'https://.../m4.jpg'</tspan><tspan fill="#E2E8F0">,</tspan></text>
+
+      <!-- Line 8 -->
+      <text y="158"><tspan fill="#E2E8F0">  url: </tspan><tspan fill="#34D399">'https://.../article'</tspan><tspan fill="#E2E8F0">,</tspan></text>
+
+      <!-- Line 9 -->
+      <text y="180"><tspan fill="#E2E8F0">  utm: { source: </tspan><tspan fill="#34D399">'whatsapp'</tspan><tspan fill="#E2E8F0"> },</tspan></text>
+
+      <!-- Line 10 -->
+      <text y="202"><tspan fill="#E2E8F0">});</tspan></text>
+
+      <!-- Result badge inside card -->
+      <rect x="0" y="222" width="392" height="28" rx="5" fill="#0F172A" stroke="#25D366" stroke-opacity="0.4" />
+      <circle cx="16" cy="236" r="4" fill="#25D366" />
+      <text x="28" y="240" font-family="monospace" font-size="11" fill="#10B981">✓ 200 OK — Sent via @newsletter (id: msg_8a2f...)</text>
+    </g>
+  </g>
+</svg>
+

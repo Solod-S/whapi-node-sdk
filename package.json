@@ -1,0 +1,43 @@
+{
+  "name": "@mezha/whapi-sdk",
+  "version": "0.1.0",
+  "description": "Unofficial JavaScript/Node.js SDK for Whapi.Cloud REST API with focus on WhatsApp Channels and message publishing",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "README.uk.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test 'test/**/*.test.js'",
+    "test:watch": "node --test --watch 'test/**/*.test.js'",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [
+    "whapi",
+    "whatsapp",
+    "whatsapp-channel",
+    "newsletter",
+    "sdk",
+    "api",
+    "automation",
+    "news-publisher"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^9.20.0",
+    "prettier": "^3.5.0"
+  }
+}

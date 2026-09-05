@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="layerGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <linearGradient id="layerGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <linearGradient id="layerGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <linearGradient id="layerGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532D" />
+      <stop offset="100%" stop-color="#052E16" />
+    </linearGradient>
+
+    <filter id="shadow4" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+
+    <marker id="arrowDown" viewBox="0 0 10 10" refX="5" refY="6" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 1 0 L 5 10 L 9 0 z" fill="#10B981" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="380" rx="14" fill="url(#bgGrad4)" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Header -->
+  <text x="40" y="44" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700" fill="#F8FAFC">
+    RESILIENT ARCHITECTURE &amp; ZERO-DEPENDENCY RUNTIME
+  </text>
+  <text x="40" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94A3B8">
+    Modular, defense-in-depth architecture with native Node.js 20+ primitives and strict security boundaries
+  </text>
+
+  <!-- Layer 1: Developer API -->
+  <g transform="translate(40, 95)" filter="url(#shadow4)">
+    <rect width="880" height="52" rx="10" fill="url(#layerGrad1)" stroke="#38BDF8" stroke-width="1.2" />
+    <rect width="210" height="52" rx="10" fill="#0284C7" fill-opacity="0.2" />
+    <text x="24" y="31" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#38BDF8">
+      1. Developer API Surface
+    </text>
+    
+    <g transform="translate(230, 14)">
+      <rect x="0" width="115" height="24" rx="5" fill="#0F172A" stroke="#475569" stroke-width="1" />
+      <text x="57" y="16" font-family="monospace" font-size="11" fill="#E2E8F0" text-anchor="middle">WhapiClient</text>
+
+      <rect x="125" width="115" height="24" rx="5" fill="#0F172A" stroke="#475569" stroke-width="1" />
+      <text x="182" y="16" font-family="monospace" font-size="11" fill="#E2E8F0" text-anchor="middle">Channels</text>
+
+      <rect x="250" width="115" height="24" rx="5" fill="#0F172A" stroke="#475569" stroke-width="1" />
+      <text x="307" y="16" font-family="monospace" font-size="11" fill="#E2E8F0" text-anchor="middle">Messages</text>
+
+      <rect x="375" width="115" height="24" rx="5" fill="#0F172A" stroke="#475569" stroke-width="1" />
+      <text x="432" y="16" font-family="monospace" font-size="11" fill="#E2E8F0" text-anchor="middle">Media</text>
+
+      <rect x="500" width="135" height="24" rx="5" fill="#064E3B" stroke="#10B981" stroke-width="1" />
+      <text x="567" y="16" font-family="monospace" font-size="11" font-weight="600" fill="#34D399" text-anchor="middle">NewsPublisher</text>
+    </g>
+  </g>
+
+  <!-- Flow 1 -> 2 -->
+  <line x1="480" y1="147" x2="480" y2="162" stroke="#10B981" stroke-width="2" marker-end="url(#arrowDown)" />
+
+  <!-- Layer 2: Transport & Security Core -->
+  <g transform="translate(40, 165)" filter="url(#shadow4)">
+    <rect width="880" height="52" rx="10" fill="url(#layerGrad2)" stroke="#818CF8" stroke-width="1.2" />
+    <rect width="210" height="52" rx="10" fill="#6366F1" fill-opacity="0.2" />
+    <text x="24" y="31" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#A5B4FC">
+      2. Transport &amp; Security
+    </text>
+
+    <g transform="translate(230, 14)">
+      <rect x="0" width="145" height="24" rx="5" fill="#0F172A" stroke="#6366F1" stroke-width="1" />
+      <text x="72" y="16" font-family="monospace" font-size="10.5" fill="#C7D2FE" text-anchor="middle">Bearer Auth Injector</text>
+
+      <rect x="155" width="155" height="24" rx="5" fill="#0F172A" stroke="#EF4444" stroke-width="1" />
+      <text x="232" y="16" font-family="monospace" font-size="10.5" fill="#FCA5A5" text-anchor="middle">🔒 Secret Redactor</text>
+
+      <rect x="320" width="155" height="24" rx="5" fill="#0F172A" stroke="#6366F1" stroke-width="1" />
+      <text x="397" y="16" font-family="monospace" font-size="10.5" fill="#C7D2FE" text-anchor="middle">AbortSignal Controller</text>
+
+      <rect x="485" width="150" height="24" rx="5" fill="#0F172A" stroke="#6366F1" stroke-width="1" />
+      <text x="560" y="16" font-family="monospace" font-size="10.5" fill="#C7D2FE" text-anchor="middle">Query/Body Serializer</text>
+    </g>
+  </g>
+
+  <!-- Flow 2 -> 3 -->
+  <line x1="480" y1="217" x2="480" y2="232" stroke="#10B981" stroke-width="2" marker-end="url(#arrowDown)" />
+
+  <!-- Layer 3: Resilience & Reliability -->
+  <g transform="translate(40, 235)" filter="url(#shadow4)">
+    <rect width="880" height="52" rx="10" fill="url(#layerGrad3)" stroke="#10B981" stroke-width="1.2" />
+    <rect width="210" height="52" rx="10" fill="#10B981" fill-opacity="0.2" />
+    <text x="24" y="31" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#34D399">
+      3. Resilience &amp; Fault Shield
+    </text>
+
+    <g transform="translate(230, 14)">
+      <rect x="0" width="165" height="24" rx="5" fill="#064E3B" stroke="#10B981" stroke-width="1" />
+      <text x="82" y="16" font-family="monospace" font-size="10" fill="#A7F3D0" text-anchor="middle">Exponential Backoff &amp; Jitter</text>
+
+      <rect x="175" width="150" height="24" rx="5" fill="#064E3B" stroke="#F59E0B" stroke-width="1" />
+      <text x="250" y="16" font-family="monospace" font-size="10" fill="#FDE68A" text-anchor="middle">Safe Retries (GET only)</text>
+
+      <rect x="335" width="145" height="24" rx="5" fill="#064E3B" stroke="#10B981" stroke-width="1" />
+      <text x="407" y="16" font-family="monospace" font-size="10" fill="#A7F3D0" text-anchor="middle">429 Rate Limit Handler</text>
+
+      <rect x="490" width="145" height="24" rx="5" fill="#064E3B" stroke="#10B981" stroke-width="1" />
+      <text x="562" y="16" font-family="monospace" font-size="10" fill="#A7F3D0" text-anchor="middle">Custom Error Classes</text>
+    </g>
+  </g>
+
+  <!-- Flow 3 -> 4 -->
+  <line x1="480" y1="287" x2="480" y2="302" stroke="#10B981" stroke-width="2" marker-end="url(#arrowDown)" />
+
+  <!-- Layer 4: Foundation / Runtime -->
+  <g transform="translate(40, 305)" filter="url(#shadow4)">
+    <rect width="880" height="50" rx="10" fill="url(#layerGrad4)" stroke="#22C55E" stroke-width="1.2" />
+    <rect width="210" height="50" rx="10" fill="#22C55E" fill-opacity="0.25" />
+    <text x="24" y="30" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#86EFAC">
+      4. Native Runtime &amp; Cloud
+    </text>
+
+    <g transform="translate(230, 13)">
+      <text x="30" y="18" font-family="monospace" font-size="11" fill="#FFFFFF">Node.js 20+ Native fetch</text>
+      <text x="210" y="18" font-family="monospace" font-size="11" fill="#86EFAC">• Zero Dependencies</text>
+      <text x="390" y="18" font-family="monospace" font-size="11" fill="#FFFFFF">• Native FormData &amp; Blob</text>
+      <text x="575" y="18" font-family="monospace" font-size="11" fill="#86EFAC">• Whapi.cloud API Gateway</text>
+    </g>
+  </g>
+</svg>

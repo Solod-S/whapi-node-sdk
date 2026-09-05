@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="intBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="waCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+
+    <linearGradient id="pollBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#25D366" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="380" rx="14" fill="url(#intBg)" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Header -->
+  <text x="40" y="44" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="700" fill="#F8FAFC">
+    RICH INTERACTIVE BROADCAST POSTS IN CHANNELS
+  </text>
+  <text x="40" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94A3B8">
+    Native support for WhatsApp Channel Polls, Validated Trivia Quizzes, and Question Cards
+  </text>
+
+  <!-- Card 1: WhatsApp Channel Poll -->
+  <g transform="translate(40, 95)" filter="url(#cardShadow)">
+    <rect width="275" height="250" rx="12" fill="url(#waCard)" stroke="#334155" stroke-width="1.5" />
+    <rect x="0" y="0" width="275" height="34" rx="12" fill="#25D366" fill-opacity="0.15" />
+    <text x="16" y="22" font-family="monospace" font-size="12" font-weight="700" fill="#25D366">whapi.channels.publishPoll()</text>
+
+    <!-- Poll Question -->
+    <text x="16" y="58" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">
+      Preferred Node.js in Prod?
+    </text>
+
+    <!-- Option 1 with bar -->
+    <rect x="16" y="74" width="243" height="32" rx="6" fill="#0F172A" stroke="#475569" stroke-width="1" />
+    <rect x="17" y="75" width="160" height="30" rx="5" fill="url(#pollBar)" fill-opacity="0.3" />
+    <text x="26" y="94" font-family="sans-serif" font-size="12" fill="#E2E8F0">Node.js 22 LTS</text>
+    <text x="248" y="94" font-family="sans-serif" font-size="11" font-weight="700" fill="#10B981" text-anchor="end">65%</text>
+
+    <!-- Option 2 with bar -->
+    <rect x="16" y="114" width="243" height="32" rx="6" fill="#0F172A" stroke="#475569" stroke-width="1" />
+    <rect x="17" y="115" width="60" height="30" rx="5" fill="url(#pollBar)" fill-opacity="0.3" />
+    <text x="26" y="134" font-family="sans-serif" font-size="12" fill="#E2E8F0">Node.js 20 LTS</text>
+    <text x="248" y="134" font-family="sans-serif" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="end">25%</text>
+
+    <!-- Option 3 -->
+    <rect x="16" y="154" width="243" height="32" rx="6" fill="#0F172A" stroke="#475569" stroke-width="1" />
+    <rect x="17" y="155" width="24" height="30" rx="5" fill="url(#pollBar)" fill-opacity="0.3" />
+    <text x="26" y="174" font-family="sans-serif" font-size="12" fill="#E2E8F0">Other / Bun</text>
+    <text x="248" y="174" font-family="sans-serif" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="end">10%</text>
+
+    <!-- Footer meta -->
+    <text x="16" y="215" font-family="sans-serif" font-size="11" fill="#64748B">3,420 votes • Multiple answers: false</text>
+  </g>
+
+  <!-- Card 2: Interactive Trivia Quiz -->
+  <g transform="translate(342, 95)" filter="url(#cardShadow)">
+    <rect width="275" height="250" rx="12" fill="url(#waCard)" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="0" y="0" width="275" height="34" rx="12" fill="#0284C7" fill-opacity="0.2" />
+    <text x="16" y="22" font-family="monospace" font-size="12" font-weight="700" fill="#38BDF8">whapi.channels.publishQuiz()</text>
+
+    <!-- Quiz Question -->
+    <text x="16" y="58" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">
+      When was Node.js created?
+    </text>
+
+    <!-- Quiz Option 1 -->
+    <rect x="16" y="74" width="243" height="32" rx="6" fill="#0F172A" stroke="#475569" stroke-width="1" />
+    <text x="26" y="94" font-family="sans-serif" font-size="12" fill="#E2E8F0">A. 2007</text>
+
+    <!-- Quiz Option 2 (Correct marked) -->
+    <rect x="16" y="114" width="243" height="32" rx="6" fill="#064E3B" stroke="#10B981" stroke-width="1.5" />
+    <text x="26" y="134" font-family="sans-serif" font-size="12" font-weight="600" fill="#6EE7B7">B. 2009 (Correct)</text>
+    <circle cx="240" cy="130" r="8" fill="#10B981" />
+    <path d="M 237 130 L 239 132 L 243 128" stroke="#FFFFFF" stroke-width="1.5" fill="none" />
+
+    <!-- Quiz Option 3 -->
+    <rect x="16" y="154" width="243" height="32" rx="6" fill="#0F172A" stroke="#475569" stroke-width="1" />
+    <text x="26" y="174" font-family="sans-serif" font-size="12" fill="#E2E8F0">C. 2012</text>
+
+    <!-- Footer meta -->
+    <text x="16" y="215" font-family="sans-serif" font-size="11" fill="#64748B">Validated correct_option_index: 1</text>
+  </g>
+
+  <!-- Card 3: Question Card -->
+  <g transform="translate(644, 95)" filter="url(#cardShadow)">
+    <rect width="275" height="250" rx="12" fill="url(#waCard)" stroke="#A78BFA" stroke-width="1.5" />
+    <rect x="0" y="0" width="275" height="34" rx="12" fill="#7C3AED" fill-opacity="0.2" />
+    <text x="16" y="22" font-family="monospace" font-size="12" font-weight="700" fill="#C084FC">publishQuestion()</text>
+
+    <!-- Question Prompt -->
+    <text x="16" y="62" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">
+      Q&amp;A Prompt to Subscribers:
+    </text>
+
+    <rect x="16" y="78" width="243" height="96" rx="8" fill="#1E1B4B" stroke="#6366F1" stroke-width="1" stroke-opacity="0.5" />
+    <text x="28" y="104" font-family="sans-serif" font-size="12.5" fill="#E0E7FF">"What new WhatsApp API</text>
+    <text x="28" y="126" font-family="sans-serif" font-size="12.5" fill="#E0E7FF">features do you want in</text>
+    <text x="28" y="148" font-family="sans-serif" font-size="12.5" fill="#E0E7FF">our next SDK release?"</text>
+
+    <rect x="16" y="186" width="243" height="32" rx="6" fill="#0F172A" stroke="#475569" stroke-width="1" />
+    <text x="26" y="206" font-family="sans-serif" font-size="11" fill="#64748B">Subscribers can reply via linked group</text>
+  </g>
+</svg>
+
